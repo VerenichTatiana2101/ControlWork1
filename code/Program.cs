@@ -1,7 +1,8 @@
 ﻿string[] stringArray = new string[] { "oldf", "two", "this", "is", "great" };
 
-Console.WriteLine("Введите целое число, максимальное количество символов массива строк: ");
-int number = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите целое число, максимальное количество символов массива строк: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+int number = 3;
 
 Console.WriteLine("Введённый массив строк: ");
 PrintArray(stringArray);
