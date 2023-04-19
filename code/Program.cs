@@ -1,7 +1,18 @@
-﻿
+﻿string[] stringArray = new string[] { "oldf", "two", "this", "is", "great" };
 
+Console.WriteLine("Введите целое число, максимальное количество символов массива строк: ");
+int number = Convert.ToInt32(Console.ReadLine());
 
+Console.WriteLine("Введённый массив строк: ");
+PrintArray(stringArray);
+Console.WriteLine();
 
+int size = CountSizeArray(stringArray, number);
+string[] newArray = new string[size];
+
+ShortStrings(stringArray, newArray, number);
+Console.WriteLine("Результат согласно условию: ");
+PrintArray(newArray);
 
 void ShortStrings(string[] array, string[] creatArray, int num)
 {
